@@ -1,0 +1,16 @@
+micronaut:
+  netty:
+    event-loops:
+      default:
+        num-threads: 60
+  server:
+    thread-selection: AUTO
+    cors:
+      enabled: true
+    idle-timeout: 61s
+  application:
+    name: metarpc
+  executors:
+    io:
+      type: fixed
+      nThreads: 150
